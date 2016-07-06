@@ -46,6 +46,8 @@ router.route("/object/:key").get(function(req,res){
             if(err)
                 return res.send(err);
 
+            if(obj === null) return res.send(null);
+
             res.send(JSON.parse(JSON.stringify(obj))[req.params.key]);
         })
     }
@@ -54,6 +56,8 @@ router.route("/object/:key").get(function(req,res){
     Obj.findOne(filter,req.params.key+" -_id",{sort: {"ts": -1}},function(err,obj){
         if(err)
             return res.send(err);
+
+        if(obj === null) return res.send(null);
 
         res.send(JSON.parse(JSON.stringify(obj))[req.params.key]);
         //console.log(obj);
