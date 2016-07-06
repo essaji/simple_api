@@ -21,7 +21,7 @@ router.route("/object").post(function(req,res){
             });
         }
         else
-            res.status(404).json({error: "key value pair is required."})
+            res.status(400).json({error: "key value pair is required."})
     })
     .get(function(req,res){
         Obj.find({},"-_id -__v",function(err,objs){
