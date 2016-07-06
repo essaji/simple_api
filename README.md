@@ -8,5 +8,12 @@ npm install
 node .
 ```
 
-### Live Demo 
+### Live Demo
+
 https://simple-api-by-essa.herokuapp.com/api/object
+
+https://simple-api-by-essa.herokuapp.com/api/object/zip
+
+https://simple-api-by-essa.herokuapp.com/api/object/zip?timestamp=1467822079978
+
+

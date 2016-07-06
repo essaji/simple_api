@@ -10,9 +10,6 @@ router.route("/object").post(function(req,res){
 
         if(Object.keys(req.body).length !== 0){
 
-            console.log("saving...");
-            console.log(req.body);
-
             req.body.ts = new Date().getTime();
             var obj = new Obj(req.body);
 
@@ -60,7 +57,6 @@ router.route("/object/:key").get(function(req,res){
         if(obj === null) return res.send(null);
 
         res.send(JSON.parse(JSON.stringify(obj))[req.params.key]);
-        //console.log(obj);
     })
 });
 
