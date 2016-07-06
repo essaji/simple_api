@@ -1,5 +1,5 @@
 var router = require("express").Router();
-var Obj = require("./my_obj");
+var Obj = require("./obj");
 
 //All the routes go here
 router.get("/",function(req,res){

@@ -1,8 +1,8 @@
 var mongoose = require("mongoose");
 
-//mongoose.connect("mongodb://essa:pakistan@ds015335.mlab.com:15335/my_db");
+mongoose.connect("mongodb://essa:pakistan@ds015335.mlab.com:15335/my_db");
 
-mongoose.connect("mongodb://localhost:27017");
+//mongoose.connect("mongodb://localhost:27017");
 
 var Schema = mongoose.Schema;
 
